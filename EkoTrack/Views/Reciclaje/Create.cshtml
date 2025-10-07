@@ -1,0 +1,36 @@
+﻿@model EkoTrack.Models.RecyclingRecord
+@{
+    ViewData["Title"] = "Registrar reciclaje";
+}
+<div class="container mt-4" style="max-width:700px">
+    <h3>Nuevo registro</h3>
+    <form asp-action="Create" method="post">
+        <div class="mb-3">
+            <label class="form-label">Material</label>
+            <select class="form-select" asp-for="MaterialId" asp-items="ViewBag.Materiales"></select>
+            <span class="text-danger" asp-validation-for="MaterialId"></span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Cantidad (kg)</label>
+            <input class="form-control" asp-for="Cantidad" />
+            <span class="text-danger" asp-validation-for="Cantidad"></span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Fecha</label>
+            <input class="form-control" asp-for="Fecha" type="date" />
+            <span class="text-danger" asp-validation-for="Fecha"></span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Notas (opcional)</label>
+            <input class="form-control" asp-for="Notas" />
+        </div>
+        <div class="d-flex gap-2">
+            <button class="btn btn-success">Guardar</button>
+            <a class="btn btn-secondary" asp-action="Index">Cancelar</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+}

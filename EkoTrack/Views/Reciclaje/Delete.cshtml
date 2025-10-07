@@ -1,0 +1,25 @@
+﻿@model EkoTrack.Models.RecyclingRecord
+@{
+    ViewData["Title"] = "Eliminar reciclaje";
+}
+<div class="container mt-4" style="max-width:700px">
+    <h3>Eliminar registro</h3>
+    <div class="alert alert-warning">
+        ¿Seguro que deseas eliminar este registro?
+    </div>
+    <dl class="row">
+        <dt class="col-sm-3">Fecha</dt>
+        <dd class="col-sm-9">@Model.Fecha.ToString("yyyy-MM-dd")</dd>
+        <dt class="col-sm-3">Material</dt>
+        <dd class="col-sm-9">@Model.Material?.Nombre</dd>
+        <dt class="col-sm-3">Cantidad</dt>
+        <dd class="col-sm-9">@Model.Cantidad</dd>
+        <dt class="col-sm-3">Notas</dt>
+        <dd class="col-sm-9">@Model.Notas</dd>
+    </dl>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <button class="btn btn-danger">Sí, eliminar</button>
+        <a class="btn btn-secondary" asp-action="Index">Cancelar</a>
+    </form>
+</div>

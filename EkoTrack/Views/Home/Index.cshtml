@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "EcoTrack — Dashboard";
+}
+<div class="container mt-5">
+    <h2 class="mb-3">♻️ Eco-Smart EC</h2>
+    <div class="row g-3 mb-4">
+        <div class="col-md-3">
+            <a class="btn btn-primary w-100" asp-controller="Auth" asp-action="Login">Iniciar sesión</a>
+        </div>
+        <div class="col-md-3">
+            <a class="btn btn-outline-primary w-100" asp-controller="Auth" asp-action="Register">Registrarse</a>
+        </div>
+        <div class="col-md-3">
+            <a class="btn btn-secondary w-100" asp-controller="Auth" asp-action="Logout">Cerrar sesión</a>
+        </div>
+    </div>
+
+    <h5 class="mt-4 mb-3">Secciones</h5>
+    <div class="row g-3">
+        <div class="col-md-4">
+            <a class="btn btn-success w-100" asp-controller="Reciclaje" asp-action="Index">1) Reciclaje</a>
+        </div>
+        <div class="col-md-4">
+            <a class="btn btn-success w-100" asp-controller="Centros" asp-action="Index">2) Centro de Reciclaje</a>
+        </div>
+        <div class="col-md-4">
+            <a class="btn btn-success w-100" asp-controller="Recolecciones" asp-action="Index">3) Recolecciones</a>
+        </div>
+    </div>
+    <p class="mt-3 text-muted">Sin sesión → vas a Login. Con rol incorrecto → Acceso denegado.</p>
+</div>
