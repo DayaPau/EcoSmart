@@ -23,10 +23,22 @@ Este proyecto fue creado como parte del curso de **Desarrollo de Aplicaciones We
 - 🚛 **RECOLECTOR:** módulo de recolección.
 - 🏢 **ADMIN_CENTRO:** gestión de centros de reciclaje.
 
+
+
+<img width="1909" height="747" alt="image" src="https://github.com/user-attachments/assets/b99c23aa-9734-4dce-aeac-cdd43b778b13" />
+
 ✅ CRUD completo de reciclaje: tipo de material, cantidad, fecha y notas.  
 ✅ Filtros por material y rango de fechas.  
+
+<img width="1913" height="751" alt="image" src="https://github.com/user-attachments/assets/62407069-047d-4e22-81fe-1236b8d887ce" />
+
 ✅ Interfaz responsive desarrollada con **Bootstrap 5**.  
 ✅ Validaciones automáticas con **Razor** y **Data Annotations**.
+
+
+<img width="1897" height="734" alt="image" src="https://github.com/user-attachments/assets/ce0672f0-03d5-45d5-9cbd-2832905182bd" />
+
+
 
 ---
 
