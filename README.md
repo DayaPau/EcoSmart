@@ -1,4 +1,4 @@
-# ♻️ EkoTrack — Plataforma MVC de Reciclaje Sostenible
+# ♻️ Eco-Smart — Plataforma MVC de Reciclaje Sostenible
 
 > “Pequeñas acciones generan grandes cambios.” 🌱  
 EkoTrack es una aplicación web desarrollada con **ASP.NET Core MVC** que promueve el reciclaje comunitario mediante un sistema de registro y seguimiento de materiales reciclados.  
@@ -8,7 +8,7 @@ Incluye autenticación segura con **BCrypt**, control de acceso por **roles** y 
 
 ## 🚀 **Objetivo del proyecto**
 
-El propósito de EkoTrack es demostrar el uso del **patrón MVC** aplicando un caso práctico y real:  
+El propósito de EcoSmart es demostrar el uso del **patrón MVC** aplicando un caso práctico y real:  
 un sistema donde los ciudadanos pueden registrar sus actividades de reciclaje y los centros pueden gestionar la información de manera segura.
 
 Este proyecto fue creado como parte del curso de **Desarrollo de Aplicaciones Web con ASP.NET MVC**, con enfoque en **HTML, CSS, C# y seguridad**.
